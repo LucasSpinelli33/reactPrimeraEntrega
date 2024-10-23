@@ -4,13 +4,13 @@ import logo from '../assets/img/Logo-City.png';
 
 function NavBar() {
     return (
-        <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px', backgroundColor: '#f8f9fa' }}>
+        <nav style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '10px' }}>
             <img src={logo} alt="Logo de la tienda" style={{ height: '50px' }} />
             <ul style={{ display: 'flex', listStyle: 'none', gap: '20px' }}>
-                <li>Mesas</li>
-                <li>Sillas</li>
-                <li>Camas</li>
-                <li>Sofás</li>
+                <a href=""><li>Mesas</li></a>
+                <a href=""><li>Sillas</li></a>
+                <a href=""><li>Camas</li></a>
+                <a href=""><li>Sofás</li></a>
             </ul>
             <CartWidget />
         </nav>

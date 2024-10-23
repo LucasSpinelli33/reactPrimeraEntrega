@@ -9,13 +9,12 @@ function CartWidget() {
                 position: 'absolute',
                 top: '0',
                 right: '0',
-                backgroundColor: 'red',
-                color: 'white',
+                backgroundColor: 'rgba(0, 255, 0, 0.5)',
+                color: 'red',
                 borderRadius: '50%',
                 padding: '2px 6px',
                 fontSize: '12px',
-                textAlign: 'center', // Centrar el texto
-                width: '20px', // Ancho fijo para el círculo
+                width: '20px', 
             }}>
                 3 
             </div>
