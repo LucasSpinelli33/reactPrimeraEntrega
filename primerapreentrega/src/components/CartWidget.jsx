@@ -14,6 +14,7 @@ function CartWidget() {
                 borderRadius: '50%',
                 padding: '2px 6px',
                 fontSize: '12px',
+                textAlign: 'center', 
                 width: '20px', 
             }}>
                 3 
