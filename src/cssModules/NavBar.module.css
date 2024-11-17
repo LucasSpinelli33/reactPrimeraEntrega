@@ -1,0 +1,26 @@
+.navbar {
+    background-color: #f8f9fa;  
+    padding: 10px 20px;
+}
+
+.navbarImg {
+    height: 50px;  
+}
+
+.navLink {
+    color: #333;  
+    text-decoration: none;
+    margin-right: 20px;
+}
+
+.navLinkHover:hover {
+    color: #007bff;  
+}
+
+.cartWidget {
+    margin-left: 20px;
+}
+
+.container {
+    margin-top: 20px;
+}
