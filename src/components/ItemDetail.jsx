@@ -2,6 +2,7 @@ import React from 'react';
 import styles from '../cssModules/ItemDetail.module.css';  
 import ItemCount from './ItemCount';
 
+
 const ItemDetail = ({ item }) => {
   return (
     <div className={styles.container}>

@@ -5,6 +5,7 @@ import styles from '../cssModules/NavBar.module.css';
 import CartWidget from './CartWidget';  
 import logo from '../assets/img/Logo-City.png'; 
 
+
 function NavBar() {
     return (
         <Navbar bg="light" expand="lg" className={`py-3 ${styles.navbar}`}>

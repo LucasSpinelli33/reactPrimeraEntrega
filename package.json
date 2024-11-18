@@ -4,6 +4,7 @@
   "version": "0.0.0",
   "type": "module",
   "homepage": "https://lucasspinelli33.github.io/reactPrimeraEntrega/",
+  
   "scripts": {
     "dev": "vite",
     "build": "vite build",
