@@ -5,18 +5,16 @@
 }
 
 .main-title {
-    font-size: 2rem;
-    font-weight: 600;
-    color: #614646;
+    font-size: 2.2rem; 
+    font-weight: 700; 
+    color: #333333; 
     margin-bottom: 20px;
-}
-
-.category-title {
-    font-size: 1.5rem;
-    font-weight: 500;
-    color: #666;
-    margin-bottom: 30px;
     text-transform: capitalize;
+    padding: 15px; 
+    border-bottom: 3px solid #ddd; 
+    background-color: #f9f9f9; 
+    font-family: 'Helvetica Neue', sans-serif; 
+    letter-spacing: 0.5px; 
 }
 
 .products-container {

@@ -6,7 +6,7 @@ import styles from "../cssModules/ListItem.module.css";
 const ListItem = ({ productos }) => {
   return (
     <div className="container">
-      <h1 className="main-title">Productos</h1>
+      <h1 className={styles.categoryTitle}>PRODUCTOS</h1>
 
       <div className={styles["card-container"]}> 
         {productos.length > 0 ? (

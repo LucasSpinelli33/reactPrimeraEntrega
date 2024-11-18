@@ -4,7 +4,7 @@
         "product_name": "Dermot",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "250000",
-        "category": "Camas",
+        "category": "CAMAS",
         "image":"http://dummyimage.com/219x100.png/ff4444/ffffff"
     },
     {
@@ -12,7 +12,7 @@
         "product_name": "Ryan",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "100000",
-        "category": "Camas",
+        "category": "CAMAS",
         "image":"http://dummyimage.com/219x100.png/5fa2dd/ffffff"
     },
     {
@@ -20,7 +20,7 @@
         "product_name": "Gerhardine",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "150000",
-        "category": "Camas",
+        "category": "CAMAS",
         "image":"http://dummyimage.com/190x100.png/5fa2dd/ffffff"
     },
     {
@@ -28,7 +28,7 @@
         "product_name": "Hymie",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "210000",
-        "category": "Sofas",
+        "category": "SOFAS",
         "image":"http://dummyimage.com/166x100.png/ff4444/ffffff"
     },
     {
@@ -36,7 +36,7 @@
         "product_name": "Denis",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "350000",
-        "category": "Mesas",
+        "category": "MESAS",
         "image":"http://dummyimage.com/147x100.png/5fa2dd/ffffff"
     },
     {
@@ -44,7 +44,7 @@
         "product_name": "Ferris",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "452000",
-        "category": "Mesas",
+        "category": "MESAS",
         "image":"http://dummyimage.com/159x100.png/cc0000/ffffff"
     },
     {
@@ -52,7 +52,7 @@
         "product_name": "Tabb",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "142000",
-        "category": "Mesas",
+        "category": "MESAS",
         "image":"http://dummyimage.com/249x100.png/5fa2dd/ffffff"
     },
     {
@@ -60,7 +60,7 @@
         "product_name": "Roana",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "360000",
-        "category": "Sillas",
+        "category": "SILLAS",
         "image":"http://dummyimage.com/226x100.png/ff4444/ffffff"
     },
     {
@@ -68,7 +68,7 @@
         "product_name": "Doyle",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "74000",
-        "category": "Sillas",
+        "category": "SILLAS",
         "image":"http://dummyimage.com/175x100.png/5fa2dd/ffffff"
     },
     {
@@ -76,7 +76,7 @@
         "product_name": "Glenda",
         "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
         "price": "1230000",
-        "category": "Sofas",
+        "category": "SOFAS",
         "image":"http://dummyimage.com/198x100.png/ff4444/ffffff"
     }
 ]

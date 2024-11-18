@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ListItem from './ListItem';
-import data from '../data/data.json';  
-
+import data from '../data/data.json';
+import styles from "../cssModules/ItemListContainer.module.css"; 
 
 function ItemListContainer() {
   const [productos, setProductos] = useState([]);
@@ -12,7 +12,7 @@ function ItemListContainer() {
     return new Promise((resolve) => {
       setTimeout(() => {
         resolve(data);  
-      }, 1000);
+      }, 100);
     });
   };
 
@@ -30,9 +30,9 @@ function ItemListContainer() {
   }, [category]);  
 
   return (
-    <div >
+    <div className={styles.container} >
       
-      <h3>{category ? ` ${category}` : 'Todos los productos'}</h3>
+      <h3 className={styles['main-title']}>{category ? ` ${category}` : 'TODOS LOS PRODUCTOS'}</h3>
       <ListItem productos={productos} /> 
     </div>
   );

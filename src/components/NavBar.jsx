@@ -8,7 +8,7 @@ import logo from '../assets/img/Logo-City.png';
 
 function NavBar() {
     return (
-        <Navbar bg="light" expand="lg" className={`py-3 ${styles.navbar}`}>
+        <Navbar  expand="lg" className={`py-3 ${styles.navbar}`}>
         <Container>
             <Link to='/reactPrimeraEntrega/'>
                 <img src={logo} alt="Logo" className={styles.navbarImg} />

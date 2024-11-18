@@ -1,21 +1,21 @@
 
 .navbar {
-    background-color: #f8f9fa;  
+    background-color: #af9f9f;  
     padding: 10px 20px;
 }
 
 .navbarImg {
-    height: 50px;  
+    height: 100px;  
 }
 
 .navLink {
-    color: #5d4040;  
+    color: #090303;  
     text-decoration: none;
     margin-right: 20px;
 }
 
 .navLinkHover:hover {
-    color: #007bff;  
+    color: #a7d718;  
 }
 
 .cartWidget {
