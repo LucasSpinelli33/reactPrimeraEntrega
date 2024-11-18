@@ -7,7 +7,6 @@ function ItemListContainer() {
   const [productos, setProductos] = useState([]);
   const { category } = useParams();  
 
-  
   const getProducts = () => {
     return new Promise((resolve) => {
       setTimeout(() => {

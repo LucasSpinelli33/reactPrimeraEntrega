@@ -1,7 +1,7 @@
 import React from 'react';
 import { Card, Button } from 'react-bootstrap';
 import { Link } from 'react-router-dom';
-import styles from '../cssModules/Item.module.css'; // Importa el archivo CSS Module correcto
+import styles from '../cssModules/Item.module.css'; 
 
 const Item = ({ producto }) => {
   return (
@@ -14,7 +14,7 @@ const Item = ({ producto }) => {
             Categoría: {producto.category} <br />
             Precio: ${producto.price}
           </Card.Text>
-          {/* Enlace a la página de detalles del producto */}
+         
           <Button as={Link} to={`/producto/${producto.id}`}>
             Ver más
           </Button>

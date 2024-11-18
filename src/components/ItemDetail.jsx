@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '../cssModules/ItemDetail.module.css';  // Importa el archivo CSS Module
+import styles from '../cssModules/ItemDetail.module.css';  
 import ItemCount from './ItemCount';
 
 const ItemDetail = ({ item }) => {

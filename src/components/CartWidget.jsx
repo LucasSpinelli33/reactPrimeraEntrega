@@ -6,7 +6,7 @@ function CartWidget() {
     return (
         <div className={styles.cart}>
             <FaShoppingCart />
-            <span>3</span> {/* Número de artículos en el carrito */}
+            <span>3</span> 
         </div>
     );
 }

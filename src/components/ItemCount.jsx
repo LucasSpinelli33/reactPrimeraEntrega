@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import { Button, Card } from 'react-bootstrap'; // Importamos los componentes de Bootstrap
-import styles from '../cssModules/ItemCount.module.css';  // Importa el archivo CSS Module
+import { Button, Card } from 'react-bootstrap'; 
+import styles from '../cssModules/ItemCount.module.css';  
 
 const ItemCount = () => {
   const [count, setCount] = useState(1);
@@ -43,10 +43,9 @@ const ItemCount = () => {
           </Button>
         </div>
 
-        {/* Botón de agregar al carrito */}
         <Button 
           variant="primary" 
-          className="mt-3 w-100"  // Asegura que el botón ocupe el ancho completo
+          className="mt-3 w-100" 
           onClick={() => alert(`Has seleccionado ${count} productos`)}
         >
           Agregar al carrito

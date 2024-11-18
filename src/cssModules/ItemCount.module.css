@@ -1,15 +1,14 @@
 .card {
-    width: 200px;
+    width: 150px;
     margin: auto;
     padding: 15px;
     text-align: center;
   }
   
-  /* Contenedor para los botones de incrementar, decrementar y el contador */
   .countControls {
     display: flex;
-    justify-content: space-between; /* Espacio entre los botones y el contador */
-    width: 100%;  /* Asegura que ocupe todo el ancho posible dentro de la tarjeta */
+    justify-content: space-between; 
+    width: 100%;  
     margin-top: 10px;
   }
   

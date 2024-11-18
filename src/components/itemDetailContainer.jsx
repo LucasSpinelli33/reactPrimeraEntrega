@@ -1,16 +1,16 @@
-// ItemDetailContainer.jsx
+
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
-import data from '../data/data.json';  // Asumiendo que tus datos están en este archivo
+import data from '../data/data.json';  
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
-  const { id } = useParams();  // Obtenemos el ID del producto desde la URL
+  const { id } = useParams();  
 
   const fetchItemById = (id) => {
     return new Promise((resolve, reject) => {
-      const item = data.find((el) => el.id === parseInt(id));  // Filtramos el producto por ID
+      const item = data.find((el) => el.id === parseInt(id));  
 
       if (item) {
         resolve(item);
@@ -23,16 +23,16 @@ const ItemDetailContainer = () => {
   useEffect(() => {
     fetchItemById(id)
       .then((res) => {
-        setItem(res); // Establecemos el producto en el estado
+        setItem(res); 
       })
       .catch((err) => {
         console.error(err);
       });
-  }, [id]);  // Vuelve a ejecutar el efecto cada vez que el ID cambia
+  }, [id]);  
 
   return (
     <div>
-      {item ? <ItemDetail item={item} /> : <p>Cargando producto...</p>}  {/* Muestra el detalle del producto */}
+      {item ? <ItemDetail item={item} /> : <p>Cargando producto...</p>} 
     </div>
   );
 };

@@ -3,7 +3,6 @@ import { Link } from 'react-router-dom';
 import { Navbar, Nav, Container } from 'react-bootstrap';
 import styles from '../cssModules/NavBar.module.css';  
 import CartWidget from './CartWidget';  
-
 import logo from '../assets/img/Logo-City.png'; 
 
 function NavBar() {
