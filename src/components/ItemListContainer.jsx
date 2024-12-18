@@ -1,39 +1,40 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useContext } from 'react';
 import { useParams } from 'react-router-dom';
 import ListItem from './ListItem';
-import data from '../data/data.json';
+import { getProducts } from '../firebase/db';  // Aquí mantienes la importación
 import styles from "../cssModules/ItemListContainer.module.css"; 
+import cartContext from '../context/cartContext';
 
 function ItemListContainer() {
   const [productos, setProductos] = useState([]);
-  const { category } = useParams();  
-
-  const getProducts = () => {
-    return new Promise((resolve) => {
-      setTimeout(() => {
-        resolve(data);  
-      }, 100);
-    });
-  };
+  const { category } = useParams();
+  const { cart, addToCart, getQuantity } = useContext(cartContext);
 
   useEffect(() => {
-    getProducts().then((productosData) => {
-      
-      const productosFiltrados = category
-        ? productosData.filter((producto) => 
-            producto.category.toLowerCase() === category.toLowerCase()
-          )
-        : productosData; 
+    getProducts()
+      .then(products => {
+        // Filtramos productos si la categoría está presente
+        const productosFiltrados = category
+          ? products.filter(producto => 
+              producto.category.toLowerCase() === category.toLowerCase()
+            )
+          : products;
+        
+        setProductos(productosFiltrados);
+      })
+      .catch(error => {
+        console.error("Error al obtener productos:", error);
+      });
+  }, [category]);
 
-      setProductos(productosFiltrados); 
-    });
-  }, [category]);  
+  if (productos.length === 0) {
+    return <p>Cargando...</p>;
+  }
 
   return (
-    <div className={styles.container} >
-      
-      <h3 className={styles['main-title']}>{category ? ` ${category}` : 'TODOS LOS PRODUCTOS'}</h3>
-      <ListItem productos={productos} /> 
+    <div className={styles.container}>
+      <h3 className={styles['main-title']}>{category ? `${category}` : 'TODOS LOS PRODUCTOS'}</h3>
+      <ListItem productos={productos} />
     </div>
   );
 }

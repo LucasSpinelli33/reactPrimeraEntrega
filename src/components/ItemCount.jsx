@@ -1,10 +1,15 @@
 import React, { useState } from 'react';
 import { Button, Card } from 'react-bootstrap'; 
 import styles from '../cssModules/ItemCount.module.css';  
+import { useContext } from 'react';
+import cartContext  from '../context/cartContext'
 
-
-const ItemCount = () => {
+const ItemCount = ({ detail }) => {
   const [count, setCount] = useState(1);
+  const { addToCart } = useContext(cartContext)
+  const handleAddToCart = () => {
+    addToCart({ ...detail, quantity: count })
+  }
 
   const increment = () => {
     setCount(count + 1);
@@ -47,7 +52,7 @@ const ItemCount = () => {
         <Button 
           variant="primary" 
           className="mt-3 w-100" 
-          onClick={() => alert(`Has seleccionado ${count} productos`)}
+          onClick={handleAddToCart}
         >
           Agregar al carrito
         </Button>

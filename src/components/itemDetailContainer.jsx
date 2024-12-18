@@ -1,38 +1,28 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
-import data from '../data/data.json';  
-
+import { getProductById } from '../firebase/db';  
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
-  const { id } = useParams();  
+  const { id } = useParams(); 
 
-  const fetchItemById = (id) => {
-    return new Promise((resolve, reject) => {
-      const item = data.find((el) => el.id === parseInt(id));  
-
-      if (item) {
-        resolve(item);
-      } else {
-        reject({ error: "Producto no encontrado" });
-      }
-    });
+  const fetchItemById = async (id) => {
+    try {
+      const product = await getProductById(id);  
+      setItem(product);  
+    } catch (error) {
+      console.error("Error al obtener el producto:", error);
+    }
   };
 
   useEffect(() => {
-    fetchItemById(id)
-      .then((res) => {
-        setItem(res); 
-      })
-      .catch((err) => {
-        console.error(err);
-      });
-  }, [id]);  
+    fetchItemById(id);  
+  }, [id]);
 
   return (
     <div>
-      {item ? <ItemDetail item={item} /> : <p>Cargando producto...</p>} 
+      {item ? <ItemDetail detail={item} /> : <p>Cargando producto...</p>}
     </div>
   );
 };
