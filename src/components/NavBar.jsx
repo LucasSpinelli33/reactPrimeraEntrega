@@ -10,7 +10,7 @@ function NavBar() {
     return (
         <Navbar  expand="lg" className={`py-3 ${styles.navbar}`}>
         <Container>
-            <Link to='/reactPrimeraEntrega/'>
+            <Link to='/'>
                 <img src={logo} alt="Logo" className={styles.navbarImg} />
             </Link>
             <Navbar.Toggle aria-controls="navbar-nav" />

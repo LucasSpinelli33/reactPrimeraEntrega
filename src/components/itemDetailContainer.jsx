@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom';
 import ItemDetail from './ItemDetail';
-import { getProductById } from '../firebase/db';  
+import { getProductById } from '../firebase/db';  // Aquí ahora debería funcionar correctamente
 
 const ItemDetailContainer = () => {
   const [item, setItem] = useState(null);
@@ -9,15 +9,15 @@ const ItemDetailContainer = () => {
 
   const fetchItemById = async (id) => {
     try {
-      const product = await getProductById(id);  
-      setItem(product);  
+      const product = await getProductById(id);  // Aquí se obtiene el producto
+      setItem(product);  // Se actualiza el estado con el producto
     } catch (error) {
       console.error("Error al obtener el producto:", error);
     }
   };
 
   useEffect(() => {
-    fetchItemById(id);  
+    fetchItemById(id);  // Llama a la función cada vez que cambia el ID
   }, [id]);
 
   return (
